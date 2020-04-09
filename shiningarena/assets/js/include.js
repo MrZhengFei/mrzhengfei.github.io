@@ -10,9 +10,11 @@ function downApp(el){
     window.location.href = isAndroid? urls.android : isiOS? urls.ios : urls.android;
 }
 function weixinTip(el) {
+    var u = navigator.userAgent,
+    isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     var ua = navigator.userAgent;
     var Browser = /Safari/.test(ua) && !/Chrome/.test(ua);
-    if (Browser == 0) {
+    if (isiOS && Browser == 0) {
         el.onclick = function(e) {
             window.event ? window.event.returnValue = false : e.preventDefault();
             document.getElementById('uaTip').style.display = 'block';

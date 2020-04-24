@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Shining C3Plus在线安装" />
+    <meta name="keywords" content="Shining C3Plus" />
+    <title>Shining C3Plus在线安装</title>
+    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.ico' />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/my.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="topbread" style="margin-bottom: 20px;">
+                <div class="container">
+                    <h1 class="text-center">Shining C3Plus</h1>
+                </div>
+            </div>
+            <div style="margin-top:70px; margin-bottom: 20px;">
+                <div style="text-align:center;">
+                    <div class="polaroid">
+                        <div class="logo">
+                            <img src="assets/images/icon.png" class="img-circle" width="120" height="120" />
+                        </div>
+                    </div><div class="uatip" id="uaTip">
+                        <span class="uatip-icon"></span>
+                        <p class="uatip-txt">点击右上角<br />选择在Safari中打开</p>
+                    </div>
+                    <div style="padding-top:20px;">
+                        <span id="checkinfo">
+                            <a href="javascript:void(0)" 
+                            data-android="https://c3plus-dev-1300060653.file.myqcloud.com/daily/ios/shining_c3plus.apk"
+                            data-ios="itms-services://?action=download-manifest&amp;url=https://mrzhengfei.github.io/shiningc3plus/ipa.plist"
+                            onclick="downApp(this)" class="btn btn-success btn-lg btn-circle" id="uaApp">在线安装</a>
+                        </span>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <hr class="devider devider-dotted">
+            </div>
+        </div>
+        <div align="center"><img src="assets/images/bg.png"></div>
+        <!--充当占位符的div块，无实质内容 -->
+        <div style="height:60px;"></div> 
+    </div>
+    <div class="footer">
+        <div class="text-center reply-topic">
+            ©&nbsp;2020 <a href="" target="blank">Shining Studio</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/include.js"></script>
+    <script>
+        var btn1 = document.getElementById('uaApp');
+        weixinTip(btn1);
+    </script>
+</body>
+
+</html>
